@@ -1,0 +1,16 @@
+[1015/105732.129:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1015/222545.871:ERROR:process_reader_win.cc(127)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1015/222545.887:ERROR:process_reader_win.cc(127)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1015/222545.887:ERROR:process_reader_win.cc(127)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1015/222545.856:ERROR:process_reader_win.cc(127)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1015/222545.856:ERROR:process_reader_win.cc(127)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1015/222546.074:ERROR:exception_snapshot_win.cc(100)] thread ID 15944 not found in process
+[1015/222546.074:ERROR:exception_snapshot_win.cc(100)] thread ID 15924 not found in process
+[1015/222546.074:ERROR:exception_snapshot_win.cc(100)] thread ID 12116 not found in process
+[1015/222546.074:ERROR:exception_snapshot_win.cc(100)] thread ID 11016 not found in process
+[1015/222546.074:ERROR:exception_snapshot_win.cc(100)] thread ID 14732 not found in process
+[1015/222549.668:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\fabri\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\3537b464-35f9-4327-820d-ec6feb128a8d: Системе не удается найти указанный путь. (0x3)
+[1015/222549.715:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\fabri\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\4bfa9298-3891-4692-8e2d-2b1cdaf607aa: Системе не удается найти указанный путь. (0x3)
+[1015/222549.762:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\fabri\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\d6a999b9-04bd-442a-9b11-3660ea0a8551: Системе не удается найти указанный путь. (0x3)
+[1015/222549.840:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\fabri\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\6924660c-9cd2-4f28-81aa-0142f0a9477b: Системе не удается найти указанный путь. (0x3)
+[1015/222549.933:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\fabri\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\6511ff06-b88b-44a7-96e3-079a7920ce32: Системе не удается найти указанный путь. (0x3)
