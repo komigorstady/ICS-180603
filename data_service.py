@@ -27,6 +27,8 @@ def get_inidicators():
     for line in from_file:
         line_list = line.split()
         indicators_list.append(line_list)
+    
+    return indicators_list
 
 def show_markets(markets):
     # задати інтервал виводу
