@@ -1,53 +1,61 @@
-""" Формування заявок на устатткування по магазину
+""" Аналіз товарообігу та продуктивності праці
 """
+# підключити функції з модуля `data_service`
 from data_service import get_markets, get_inidicators
 
-analysis_of_turnover = {
-    'name_of_market'               : '',
-    'quarter '                     : '',
-    'planned_exchange_of_goods'    : 0.0,
-    'actual_exchange_of_goods'     : 0.0,
-    'percentage_of_completion'     : 0,
-    'planne_productivity'          : 0.0,
-    'actual_productivity'          : 0.0
+# структура накопичувача записів вихідних даних
+table = {
+    'name_of_market'               : '',  #назва магазину
+    'quarter'                      : '',  #квартал
+    'planned_exchange_of_goods'    : 0.0, #запланований товарообiг
+    'actual_exchange_of_goods'     : 0.0, #фктичний товарообiг
+    'percentage_of_completion'     : 0.0, #вiдсотки
+    'planne_productivity'          : 0.0, #планова продуктивнiсть 
+    'actual_productivity'          : 0.0  #справжня  продуктивнiсть
 }
 
-market = get_markets()
+
+markets = get_markets()
 indicators = get_inidicators()
 
-"""
-def create_zajavka():
-    Формування заявок на товары
+def create_table():
     
-    def get__name(client_code)
-    повертаэ назву його коду
-    
+    def get_market_name(market_code):
+        """повертає назву клієнта по його коду
+            
+        Args:
+            client_code ([type]): код клієнта
+
+        Returns:
+            [type]: назва клієнта
+        """       
+
+        for market in markets:
+            if market[0] == market_code:
+                return market[1]
+        
+        return"*** код клiента не знайнденый"
+
+    # накопычуввч заявок
+    table_list = []
 
     for indicator in indicators:
-        if inidicator[0] == inidicator_code:
-            return client[1]
-        return "код клиета не знайденый"
+        # створити копію шаблона
+        table_tmp = table.copy()
 
-    # накопычувач заявок
-    zajavka_list = []
+        table_tmp['name_of_market']            = get_market_name(indicator[1])
+        table_tmp['quarter']                   = indicator[0]
+        table_tmp['planned_exchange_of_goods'] = indicator[2]
+        table_tmp['actual_exchange_of_goods']  = indicator[3]
+        table_tmp['percentage_of_completion']  = float(table_tmp['actual_exchange_of_goods']) / float(table_tmp['planned_exchange_of_goods']) * 100
+        table_tmp['planne_productivity']       = indicator[4]
+        table_tmp['actual_productivity']       = indicator[5]
+        
+        table_list.append(table_tmp)
 
-    for inidicator in inidicators:
-        zajavka_tmp = zajavka.copy()
+    return table_list
 
-        zajavka_tmp['around_name'] = inidicator[2]
-        #zajavka_tmp['client_name'] =
-        zajavka_tmp['order_number'] = inidicator[1]
-        zajavka_tmp['kol'] = inidicator[3]
-        zajavka_tmp['price'] = inidicator[4]
-        zajavka_tmp['tottal'] = zajavka_tmp['kol'] * zajavka_tmp['price']
-
-        zajavka_list.append(zajavka_tmp)
-
-    return zajavka_list
-
-result = create_zajavka()
-
+result = create_table()
 
 for r in result:
     print(r)
-"""

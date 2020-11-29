@@ -30,6 +30,7 @@ def get_inidicators():
     
     return indicators_list
 
+
 def show_markets(markets):
     # задати інтервал виводу
     market_code_from = input("З якого кода клієнта? ")
